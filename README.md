@@ -18,7 +18,7 @@ Chan utils
 
 `cb-name` is the new variable for callback. For example, use `got` as the name:
 
-```
+```clojure
 (go
  (let [data (<! (chan-once got
                   (js/setTimeout
