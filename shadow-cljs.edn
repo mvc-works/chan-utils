@@ -1,0 +1,8 @@
+{:source-paths ["src" "macros"]
+ :repositories {"central" {:url "https://maven.aliyun.com/nexus/content/groups/public/"}
+                "clojars" {:url "https://mirrors.ustc.edu.cn/clojars/"}}
+ :dependencies []
+ :builds {:app {:target :node-script
+                :output-to "target/server.js"
+                :main chan-utils.main/main!
+                :devtools {:after-load chan-utils.main/reload!}}}}
