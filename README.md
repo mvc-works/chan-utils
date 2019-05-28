@@ -5,7 +5,7 @@ Chan utils
 [![Clojars Project](https://img.shields.io/clojars/v/mvc-works/chan-utils.svg)](https://clojars.org/mvc-works/chan-utils)
 
 ```edn
-[mvc-works/chan-utils "0.1.0-a1"]
+[mvc-works/chan-utils "0.1.0"]
 ```
 
 ### Usage
