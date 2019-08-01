@@ -5,10 +5,11 @@
 
 (defn task! []
   (println "run task")
+  (comment println (macroexpand-1 '(chan-once got (js/setTimeout (fn [] (got 1)) 4000))))
   (go
    (let [data (<! (chan-once got (js/setTimeout (fn [] (got 1)) 4000)))]
      (println "data" data)))
-  (go (let [ys (all-once (fn [x] (chan)) 1)] )))
+  (comment go (let [ys (all-once (fn [x] (chan)) [1 2])] )))
 
 (defn main! [] (println "Started.") (task!))
 
