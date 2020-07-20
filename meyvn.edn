@@ -1,9 +1,0 @@
-
-{:pom {:group-id "mvc-works",
-       :artifact-id "chan-utils",
-       :version "0.1.1",
-       :name "Helper functions for handling channels."}
- :packaging {:jar {:enabled true
-                   :remote-repository {:id "clojars"
-                                       :url "https://clojars.org/repo"}}}
- :scm {:enabled true}}

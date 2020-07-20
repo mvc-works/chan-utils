@@ -10,21 +10,7 @@ Chan utils
 
 ### Usage
 
-* `chan-utils.core/chan-once` is a macro for creating a channel.
-
-```clojure
-(chan-once cb-name body)
-```
-
-`cb-name` is the new variable for callback. For example, use `got` as the name:
-
-```clojure
-(go
- (let [data (<! (chan-once got
-                  (js/setTimeout
-                    (fn [] (got 1)) 4000)))]
-   (println "data" data)))
-```
+* ~~`chan-once`~~ has been removed.
 
 * `chan-utils.core/all-once` is a function gathering a list of channels, and return values in a list after all of them finished.
 

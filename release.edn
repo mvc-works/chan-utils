@@ -1,0 +1,6 @@
+{:version "0.2.0-a1"
+ :group-id "mvc-works"
+ :artifact-id "chan-utils"
+ :skip-tag true
+ :description "Helper functions for handling channels."
+ :scm-url "https://github.com/mvc-works/chan-utils"}
